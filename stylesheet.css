@@ -1,0 +1,23 @@
+#form {
+    text-align: center; 
+    margin-top: 50px; 
+}
+
+body {
+    background-color: grey; 
+}
+
+h1 {
+    color: orange;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 60px; 
+}
+
+button {
+    background-color: orange; 
+    color: white; 
+}
