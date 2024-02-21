@@ -1,7 +1,15 @@
 console.log("Let's get this party started!");
 
 const btn = document.querySelector('#btn');
+const rmvBtn = document.querySelector('#rmv-btn');
+const container = document.querySelector('#container');
+
 btn.addEventListener('click', getInput);
+
+rmvBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    container.innerHTML = '';
+})
 
 function getInput(e){
     e.preventDefault();
@@ -21,7 +29,6 @@ async function getUrl(search){
 
 function makeImg(url) {
     console.log('this is url', url);
-    const container = document.querySelector('#container');
     const imgDiv = document.createElement('div');
     const img = document.createElement('img');
     img.setAttribute('src', url);
