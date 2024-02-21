@@ -21,7 +21,6 @@ async function getUrl(search){
     const res = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`);
     console.log('getUrl() res.data', res.data);
     const firstGif = res.data.data[0].images.downsized.url;
-    // const firstGif = res.data.data[0].url;
     console.log('getUrl(): this is first gif', firstGif);
     logIn(firstGif);
 }
